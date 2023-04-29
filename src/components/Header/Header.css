@@ -1,0 +1,28 @@
+.header-nav {
+    background-color: #1C2B35;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.header-nav img {
+    margin-left: 112px;
+    height: 43px;
+}
+
+.navigation-links {
+    margin-right: 97px;
+}
+
+.navigation-links a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 17px;
+    margin-right: 32px;
+}
+
+.navigation-links a:hover {
+    color: pink;
+}
