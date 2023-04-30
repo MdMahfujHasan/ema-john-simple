@@ -1,9 +1,10 @@
 /* eslint-disable */
 import React, { useEffect, useState } from 'react';
-import './Products.css';
+import './Shop.css';
 import Product from '../Product/Product';
+import Cart from '../Cart/Cart';
 
-const Products = () => {
+const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
 
@@ -29,11 +30,10 @@ const Products = () => {
                 }
             </div>
             <div className='cart-container'>
-                <h4>Order Summery:</h4>
-                <h4>total selected items: {cart.length}</h4>
+                <Cart cart={cart}></Cart>
             </div>
         </div>
     );
 };
 
-export default Products;
+export default Shop;
