@@ -15,7 +15,7 @@ const Shop = () => {
             .then(data => setProducts(data))
     }, [])
 
-    // side effect because we're retrieving data from browser
+    // using side effect because we're retrieving data from browser
     useEffect(() => {
         const storedCart = getShoppingCart();
         const savedCart = [];
